@@ -1,6 +1,6 @@
 {
   "name": "presentation-utility",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
     "bespoke": "^1.0.0",
@@ -9,7 +9,6 @@
     "bespoke-forms": "^1.0.0",
     "bespoke-hash": "^1.0.0",
     "bespoke-keys": "^1.0.0",
-    "bespoke-pdf": "^1.0.4",
     "bespoke-progress": "^1.0.0",
     "bespoke-scale": "^1.0.0",
     "bespoke-theme-cube": "^2.0.0",
@@ -29,29 +28,10 @@
     "gulp-uglify": "^0.3.1",
     "gulp-util": "^2.2.17",
     "insert-css": "^0.2.0",
-    "install-nw": "^1.1.5",
     "opn": "^0.1.2",
     "through": "^2.3.4"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "description": "> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "hi"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/winargo/utility.git"
-  },
-  "keywords": [
-    "utility"
-  ],
-  "author": "RIandy Irvan WInargo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/winargo/utility/issues"
-  },
-  "homepage": "https://github.com/winargo/utility#readme"
+  }
 }
