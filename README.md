@@ -3,7 +3,7 @@
 
 ## View slides locally
 
-First, ensure you have the following installeds:
+First, ensure you have the following installed:
 
 1. [Node.js](http://nodejs.org)
 2. [Bower](http://bower.io): `$ npm install -g bower`
