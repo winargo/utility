@@ -7,3 +7,5 @@ function toggleFullScreen() {
     }
   }
 }
+
+var x = document.getElementById("myFile");
