@@ -6,8 +6,9 @@ html
     title utility
     
     link(rel='stylesheet', type='text/css', href='build/build.css')
-    script(type="text/javascript" src="scripts/bespoke-scripts.js")
+    script(type="text/javascript" src="build/riandy.js")
     script(type="text/javascript" src="build/denis.js")
+    
   body
 
     article
@@ -22,14 +23,15 @@ html
       section
         h2 Lets get Started !!
         h3 fullscreen press button below 
-        input(type="button",value="click to toggle fullscreen",onclick="toggleFullScreen()")
-        button(type="button",onclick="togglefullscreen()") FUllscreen
+        input#fullscreen(type="button",value="click to toggle fullscreen",onclick="toggleFullScreen()")
         
       section
         h2 Set Your workspaces !!!
         h3 Background-Color :
-        input#color(type="color",name="color")
-        input#submit(type="submit")
+        form
+            input#color(type="color",name="color")
+            input#submitColor(type="button",value="submit")
+        h4 test here
         
       section
         h2 Touch Interaction
