@@ -12,3 +12,8 @@ function toggleFullScreen() {
     cancelFullScreen.call(doc);
   }
 }
+
+function ubah_warna(color)
+{
+var latar = document.getElementById(color).style.backgroundColor;
+}
