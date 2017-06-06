@@ -119,13 +119,14 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-#button {
+#fullscreen {
   width: 200px;
   border-radius: 2%;
   border: 1px #fff;
   height: 40px;
 }
-#button:hover {
+#fullscreen:hover {
   width: 200px;
   border: 1px solid #00f;
+  border-radius: 2%;
 }
