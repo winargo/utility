@@ -15,5 +15,8 @@ function toggleFullScreen() {
 
 function ubah_warna(color)
 {
-var latar = document.getElementById(color).style.backgroundColor;
+    
+    var warna = document.getElementById("color").value;
+    document.bgColor = warna ;
+    document.getElementById("h4").style.color = warna;
 }
