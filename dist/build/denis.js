@@ -7,6 +7,7 @@ function toggleFullScreen() {
 
   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
     requestFullScreen.call(docEl);
+    document.requestFullScreen(docEl);
   }
   else {
     cancelFullScreen.call(doc);
@@ -16,12 +17,7 @@ function toggleFullScreen() {
 function ubah_warna()
 {
     var warna = document.getElementById("color1").value;
-    document.body.style.backgroundColor = warna ;
+    document.g
     document.getElementById("ww").style.color = warna;
 }
-function ubah_section()
-{
-    var warna = document.getElementById("color1").value;
-    document.bgColor = warna ;
-    document.getElementById("h4").style.color = warna;
-}
+
