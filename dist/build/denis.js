@@ -13,10 +13,15 @@ function toggleFullScreen() {
   }
 }
 
-function ubah_warna(color)
+function ubah_warna()
 {
-    
-    var warna = document.getElementById("color").value;
+    var warna = document.getElementById("color1").value;
+    document.bgColor = warna ;
+    document.getElementById("ww").style.color = warna;
+}
+function ubah_section()
+{
+    var warna = document.getElementById("color1").value;
     document.bgColor = warna ;
     document.getElementById("h4").style.color = warna;
 }
