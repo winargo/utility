@@ -11,4 +11,12 @@ function changeBackground() {
 }
 
 document.getElementById("submitColor").addEventListener("click", changeBackground, false);
+
+function enablemouse(event) {
+    alert("You pressed button: " + event.button)
+}
+
+function alert(){
+    alert("mouse enabled");
+}
 >>>>>>> 6695af908aa6a5437e6b09b878d9022f0787ef9b
