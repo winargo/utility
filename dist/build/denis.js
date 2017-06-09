@@ -23,6 +23,7 @@ function ubah_warna()
 function ubah_back()
 {
     var warna1 = document.getElementById("color2").value;
-    document.getSelection("emphatic").style.backgroundColor = warna1;
+    var elems = document.getElementsByClassName("emphatic");
+    elems.style.backgroundColor = warna1;
 }
 
