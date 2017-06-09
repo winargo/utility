@@ -17,7 +17,12 @@ function toggleFullScreen() {
 function ubah_warna()
 {
     var warna = document.getElementById("color1").value;
-    document.g
     document.getElementById("ww").style.color = warna;
+}
+
+function ubah_back()
+{
+    var warna1 = document.getElementById("color2").value;
+    document.getSelection("emphatic").style.backgroundColor = warna1;
 }
 
