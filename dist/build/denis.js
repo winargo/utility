@@ -20,10 +20,8 @@ function ubah_warna()
     document.getElementById("ww").style.color = warna;
 }
 
-function ubah_back()
-{
-    var warna1 = document.getElementById("color2").value;
-    var elems = document.getElementsByClassName("emphatic");
-    elems.style.backgroundColor = warna1;
-}
+var bespoke = require('bespoke'),
+    pdf = require('bespoke-pdf');
+
+bespoke.from('articel',[pdf()]);
 

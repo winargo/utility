@@ -141,3 +141,8 @@ pre[class*="language-"] {
   border: 1px solid #00f;
   border-radius: 2%;
 }
+embed{
+    width: 600px;
+    height: 500px;
+    border: 3px solid skyblue;
+}
