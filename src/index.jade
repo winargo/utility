@@ -13,53 +13,57 @@ html
 
     article
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h1 utility
-        h2 Team List :
+      section
+        h2 Bootstrap Introduction
+        h3#ww Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a>
+        h3#ww Team List :
         p  1.Riandy Irvan Winargo
         p  2.Denis Suryanto
         p  3.Jilbert
         
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 Lets get Started !!
-        h3 fullscreen press button below 
+        h3#ww fullscreen click button below 
         input#fullscreen(type="button",value="click to toggle fullscreen",onclick="toggleFullScreen()")
         
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 Set Your Text Color !!!
-        h3 Font-Color :
+        h3#ww Font-Color :
         form
             input#color1(type="color",name="color")
-            input#submitColor(type="button",value="submit",onclick="ubah_warna()")
+            input#submitColor(type="button",value="Apply",onclick="ubah_warna()")
         h1#ww test here
         
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 Set Your workspaces !!!
-        h3 Background-Color :
+        h3#ww Background-Color :
+        form
+            input#color1(type="color",name="color")
+            input#submitColor(type="button",value="submit",onclick="changebg()")
         
-       section.emphatic-text(data-bespoke-backdrop='emphatic')
+       section
         h2 Interactive features
-        input#enablemouse(type="button",value="Enable Mouse Scroll",onclick="alert()")
+        input#enablemouse(type="button",value="Enable Mouse Scroll",onclick="scroll()")
        
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section#(data-bespoke-backdrop='emphatic')
         h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+        h3#ww#ww Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+      section
+        h2#ww Responsive Slides
+        h3#ww#ww Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+        h3#ww.bullet#ww Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        ul#ww
+          li#ww Bullet 1
+          li#ww Bullet 2
+          li#ww Bullet 3
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+        h3#ww#ww Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
         pre
           code.language-javascript.
             bespoke.from('article', [
@@ -69,16 +73,16 @@ html
               bullets('li, .bullet')
             ]);
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic',data-bespoke-hash='named-route')
+      section(data-bespoke-backdrop='emphatic',data-bespoke-hash='named-route')
         h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        h3#ww Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
         p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
 
       
         h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+        h3#ww Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
 
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2.bullet Just the beginning...
         br
         ul
@@ -91,7 +95,7 @@ html
             strong Enjoy! :)
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
       
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
+      section
         h2 
 
     script(src='build/build.js')
