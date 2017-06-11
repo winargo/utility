@@ -16,7 +16,13 @@ function enablemouse(event) {
     alert("You pressed button: " + event.button);
 }
 
-function alert(){
+function scroll(){
     alert("mouse enabled");
+    document.body.doScroll(event.wheelDelta>0?"left":"right");
 }
+function changebg(){
+    alert('asjdlkajldakjdlajl');
+}
+
+
 >>>>>>> 6695af908aa6a5437e6b09b878d9022f0787ef9b
