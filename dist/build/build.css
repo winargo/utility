@@ -161,3 +161,6 @@ pre[class*="language-"] {
   border: 1px solid #00f;
   border-radius: 2%;
 }
+#emphatic {
+  background: #eaeaea;
+}
