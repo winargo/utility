@@ -13,7 +13,7 @@ function changeBackground() {
 document.getElementById("submitColor").addEventListener("click", changeBackground, false);
 
 function enablemouse(event) {
-    alert("You pressed button: " + event.button)
+    alert("You pressed button: " + event.button);
 }
 
 function scroll(){

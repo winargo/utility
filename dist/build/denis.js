@@ -8,6 +8,8 @@ function toggleFullScreen() {
   if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
     requestFullScreen.call(docEl);
     document.requestFullScreen(docEl);
+       
+  document.body.style.backgroundColor = "#eaeaea" ;
   }
   else {
     cancelFullScreen.call(doc);
