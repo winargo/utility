@@ -63,26 +63,88 @@ html
       section
         h2 Bootstrap Implementation
         p Provide a link to Boostrap using html tags.
-        pre
+        pre#aa
            code.language-javascript.
                 "<"Link rel='stylesheet'
                 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
                 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-                crossorigin="anonymous"
+                crossorigin="anonymous">
 
                 "<"script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
                 crossorigin="anonymous"></script>
         
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+      section
+        h2.bullet Overviews<br>
+        ul 
+          li Containers
+          li Responsive breakpoints
+          li Z-index
+        
+      section
+        h2 Containers<br>
+        p Containers adalah element layout paling dasar dalam Bootstrap dan diperlukan ketika kita mengunakan default grid system. Pemilihan dari responsive, fixed-width (lebar dari Containers akan menjadi maksimum) dan fuild-width(lebarnya akan selalu 100%). 
+        
+      section
+        h2 Responsive breakpoints<br>
+        p Sejak Bootstrap dikembangkan ke mobile, queri digunakan untuk membuat layout dan tampilan. Breakpoint ini selalu bedasarkan lebar minumum dan memperbolehkan kita untuk meningkatkan elementnya. 
+      
+      section
+        h2 Responsive breakpoints<br>
+        p Contoh Mengunakan Media Query
+        pre#aa
+           code.language-query.                
+                // Extra small devices (portrait phones, less than 576px)
+                // No media query since this is the default in Bootstrap
+
+                // Small devices (landscape phones, 576px and up)
+                @media (min-width: 576px) { ... }
+
+                // Medium devices (tablets, 768px and up)
+                @media (min-width: 768px) { ... }
+
+                // Large devices (desktops, 992px and up)
+                @media (min-width: 992px) { ... }
+
+                // Extra large devices (large desktops, 1200px and up)
+                @media (min-width: 1200px) { ... }
 
       section
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+        h2 Responsive breakpoints<br>
+        p Contoh Mengunakan Media Query
+        pre#aa
+           code.language-query.                
+                @include media-breakpoint-up(xs) { ... }
+                @include media-breakpoint-up(sm) { ... }
+                @include media-breakpoint-up(md) { ... }
+                @include media-breakpoint-up(lg) { ... }
+                @include media-breakpoint-up(xl) { ... }
 
+                // Example usage:
+                @include media-breakpoint-up(sm) {
+                    .some-class {
+                    display: block;
+                    }
+                }
+                
+      section
+        h2 Z-index<br>
+        p Beberapa komponen Bootstrap Mengunakan "Z-index", properti "CSS" yang membantu mengatur tata letak dengan menyediakan sumbu ketiga untuk mengatur konten. dengan mengunakan skala default "Z-index" di bootstrap yang dirancang untuk menyelarasjan navigasi, toolips, popovers, modals dan lain lain.
+        
+      section
+        h2 Contoh Z-index<br>
+        pre#aa
+           code.language-query.
+                $zindex-dropdown-backdrop: 990 !default;
+                $zindex-navbar:           1000 !default;
+                $zindex-dropdown:         1000 !default;
+                $zindex-fixed:            1030 !default;        
+                $zindex-sticky:           1030 !default;
+                $zindex-modal-backdrop:   1040 !default;
+                $zindex-modal:            1050 !default;
+                $zindex-popover:          1060 !default;
+                $zindex-tooltip:          1070 !default;
+                
       section
         h2 Thank you
         h2 very much
