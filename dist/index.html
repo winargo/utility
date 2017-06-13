@@ -12,62 +12,73 @@
     <article>
       <section>
         <h2>Bootstrap Introduction</h2>
-        <h3 id="ww">Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a></h3>
-        <h3 id="ww">Team List :</h3>
+        <h3>Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a></h3>
+        <h3>Team List :</h3>
         <p> 1.Riandy Irvan Winargo</p>
         <p> 2.Denis Suryanto</p>
         <p> 3.Jilbert</p>
       </section>
       <section>
         <h2>Lets get Started !!</h2>
-        <h3 id="ww">fullscreen click button below </h3>
+        <h3>fullscreen click button below </h3>
         <input id="fullscreen" type="button" value="click to toggle fullscreen" onclick="toggleFullScreen()">
       </section>
       <section>
         <h2>Set Your Text Color !!!</h2>
         <h3>Font-Color :</h3>
-        <form>
+        <div>
           <input id="color1" type="color" name="color">
           <input id="submitColor" type="button" value="Apply" onclick="ubah_warna()">
-        </form>
+        </div>
         <h1 id="ww">test here</h1>
       </section>
       <section>
         <h2>Set Your workspaces !!!</h2>
-        <h3 id="ww">Background-Color :</h3>
+        <h3>Background-Color :</h3>
         <form>
           <input id="color2" type="color" name="color">
-          <input id="submitColor" type="button" value="submit" onclick="ubah_back()">
+          <input id="submitColor" type="button" value="Apply" onclick="ubah_back()">
         </form>
       </section>
       <section>
         <h2>Interactive features</h2>
-        <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="scroll()">
+        <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="changebg()">
       </section>
       <section>
-        <h2>Touch Interaction</h2>
-        <h3 id="ww">Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
+        <h2>What is Bootstrap ?</h2>
+        <p>Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.</p>
       </section>
       <section>
-        <h2 id="ww">What is Bootstrap ?</h2>
-        <p>Bootstrap is a great, wonderful and amazing front-end framework that seamlessly views the mobile device to speed up and simplfy website development. Bootstrap provides HTML, CSS and Javascript ready-made and easy to develop.</p>
+        <h2 class="bullet">Apa itu Bootstrap?<br><br></h2>
+        <ul>
+          <li>Bootstrap  adalah framework</li>
+          <li>Bootstrap untuk web yang memiliki CSS and Javascript</li>
+          <li>Bootstrap sangat fleksible</li>
+          <li>Bootstap untuk membangun web Secara Dinamis dan Statis</li>
+        </ul>
+        <h3><a href="http://getbootstrap.com/getting-started/">Advance Here</a></h3>
       </section>
       <section>
-        <h2>For What is a bootstrap?</h2>
-        <p>Bootstrap is a framework for building web design responsively. the web display created by bootstrap will adjust the screen size of the browser we use either on desktop, tablet or mobile device. This feature caen be enabled or disabled in accordance with our own desires. So, we can create a web for desktop display only and when rendered by mobile browser then the display of the web that we created can not adapt according to the screen. With bootstrap we can also build dynamic or static web.</p>
-      </section>
-      <section>
-        <h2>How to Insert Bootstrap?</h2>
-        <p>Add a link to Boostrap CSS and use the command that have been provided by Bootstrap.</p>
+        <h2>Bootstrap Implementation</h2>
+        <p>Provide a link to Boostrap using html tags.</p>
+        <pre><code class="language-javascript">"<"Link rel='stylesheet'
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous"
+
+"<"script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+</code></pre>
       </section>
       <section data-bespoke-hash="named-route">
         <h2>Named Route</h2>
-        <h3 id="ww">Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
         <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
       </section>
       <section>
         <h2>Emphatic Slide!</h2>
-        <h3 id="ww">Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a></h3>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a></h3>
       </section>
       <section>
         <h2>Thank you</h2>
@@ -75,7 +86,5 @@
       </section>
     </article>
     <script src="build/build.js"></script>
-    <script src="build/denis.js"></script>
-    <script src="build/riandy.js"></script>
   </body>
 </html>

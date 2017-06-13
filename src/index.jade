@@ -15,67 +15,76 @@ html
 
       section
         h2 Bootstrap Introduction
-        h3#ww Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a>
-        h3#ww Team List :
+        h3 Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a>
+        h3 Team List :
         p  1.Riandy Irvan Winargo
         p  2.Denis Suryanto
         p  3.Jilbert
         
       section
         h2 Lets get Started !!
-        h3#ww fullscreen click button below 
+        h3 fullscreen click button below 
         input#fullscreen(type="button",value="click to toggle fullscreen",onclick="toggleFullScreen()")
         
       section
         h2 Set Your Text Color !!!
         h3 Font-Color :
-        form
+        div 
             input#color1(type="color",name="color")
             input#submitColor(type="button",value="Apply",onclick="ubah_warna()")
+            
         h1#ww test here
         
        section
         h2 Set Your workspaces !!!
-        h3#ww Background-Color :
+        h3 Background-Color :
         form
             input#color2(type="color",name="color")
-            input#submitColor(type="button",value="submit",onclick="ubah_back()")
+            input#submitColor(type="button",value="Apply",onclick="ubah_back()")
         
        section
         h2 Interactive features
-        input#enablemouse(type="button",value="Enable Mouse Scroll",onclick="scroll()")
-       
-       section
-        h2 Touch Interaction
-        h3#ww Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-       section
-        h2#ww What is Bootstrap ?
-        p Bootstrap is a great, wonderful and amazing front-end framework that seamlessly views the mobile device to speed up and simplfy website development. Bootstrap provides HTML, CSS and Javascript ready-made and easy to develop.
+        input#enablemouse(type="button",value="Enable Mouse Scroll",onclick="changebg()")
         
        section
-        h2 For What is a bootstrap?
-        p Bootstrap is a framework for building web design responsively. the web display created by bootstrap will adjust the screen size of the browser we use either on desktop, tablet or mobile device. This feature caen be enabled or disabled in accordance with our own desires. So, we can create a web for desktop display only and when rendered by mobile browser then the display of the web that we created can not adapt according to the screen. With bootstrap we can also build dynamic or static web.
+        h2 What is Bootstrap ?
+        p Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.
+        
+       section
+        h2.bullet Apa itu Bootstrap?<br><br>
+        ul
+          li Bootstrap  adalah framework
+          li Bootstrap untuk web yang memiliki CSS and Javascript
+          li Bootstrap sangat fleksible
+          li Bootstap untuk membangun web Secara Dinamis dan Statis
+        h3 <a href="http://getbootstrap.com/getting-started/">Advance Here</a>
         
 
       section
-        h2 How to Insert Bootstrap?
-        p Add a link to Boostrap CSS and use the command that have been provided by Bootstrap.
-    
+        h2 Bootstrap Implementation
+        p Provide a link to Boostrap using html tags.
+        pre
+           code.language-javascript.
+                "<"Link rel='stylesheet'
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous"
+
+                "<"script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        
       section(data-bespoke-hash='named-route')
         h2 Named Route
-        h3#ww Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
         p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
 
       section
         h2 Emphatic Slide!
-        h3#ww Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
 
       section
         h2 Thank you
         h2 very much
 
     script(src='build/build.js')
-    script(src='build/denis.js')
-    script(src='build/riandy.js')
-    

@@ -25,6 +25,7 @@ function ubah_warna() {
     document.getElementsByTagName("h5").style.color = warna;
     document.getElementsByTagName("h6").style.color = warna;
     document.getElementsByTagName("p").style.color = warna;
+    document.getElementById("ww").style.color = warna;
 }
 function ubah_back() {
     "use strict";
