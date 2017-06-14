@@ -1,4 +1,5 @@
-function Username(){
-    var name = "";
+function promptpopup(){
+    var st = prompt("");
+    alert(st);
     
 }
