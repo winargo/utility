@@ -1,7 +1,10 @@
 function changeBackground() {
     var color = document.getElementById("color1").value;
-    
     document.bgColor = color;
+    document.body.style.backgroundColor = color;
+    document.html.style.backgroundColor = color;
+    document.html.style.color = color;
+    document.body.style.color = color;
 }
 
 document.getElementById("submitColor1").addEventListener("click", changeBackground, false);
@@ -27,6 +30,24 @@ function changeBackground1() {
     document.getElementById("a16").style.color = warna;
     document.getElementById("a17").style.color = warna;
     document.getElementById("a18").style.color = warna;
+    document.getElementById("a19").style.color = warna;
+    document.getElementById("a20").style.color = warna;
+    document.getElementById("a21").style.color = warna;
+    document.getElementById("a22").style.color = warna;
+    document.getElementById("a23").style.color = warna;
+    document.getElementById("a24").style.color = warna;
+    document.getElementById("a25").style.color = warna;
+    document.getElementById("a26").style.color = warna;
+    document.getElementById("a27").style.color = warna;
+    document.getElementById("a28").style.color = warna;
+    document.getElementById("a29").style.color = warna;
+    document.getElementById("a30").style.color = warna;
+    document.getElementById("a31").style.color = warna;
+    document.getElementById("a32").style.color = warna;
+    document.getElementById("a33").style.color = warna;
+    document.getElementById("a34").style.color = warna;
+    document.getElementById("a35").style.color = warna;
+    
     
 }
 
