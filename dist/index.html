@@ -43,14 +43,9 @@
       <section>
         <h2>Interactive features
           <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="changebg()">
+          <input type="button" value="alert" onclick="promptpopup()">
         </h2>
         <p id="test">hi</p>
-        <script>
-          document.getElementById("enablemouse").addEventListener("click", function(){
-          document.getElementById("test").innerHTML = "Hello World";
-          })
-          
-        </script>
       </section>
       <section>
         <h2>What is Bootstrap ?</h2>
@@ -90,6 +85,20 @@ crossorigin="anonymous"></script>
       <section>
         <h2>Containers<br></h2>
         <p>Containers adalah element layout paling dasar dalam Bootstrap dan diperlukan ketika kita mengunakan default grid system. Pemilihan dari responsive, fixed-width (lebar dari Containers akan menjadi maksimum) dan fuild-width(lebarnya akan selalu 100%). </p>
+      </section>
+      <section>
+        <h2>Contoh fixed-width<br></h2>
+        <p>standard</p><img src="images/Capture3.jpg" class="def2"><br>
+        <p>lebar container menjadi maksimum</p><img src="images/Capture2.jpg" class="def">
+      </section>
+      <section>
+        <h2>Contoh fuild-width<br></h2>
+        <p>standard</p><img src="images/Capture2.jpg" class="def"><br>
+        <p>lebar menjadi maksimum</p><img src="images/Capture1.jpg" class="def">
+      </section>
+      <section>
+        <h2>Contoh Responsive<br></h2>
+        <p>responsive adalah layout yang akan menyesuaikan diri dengan device yang digunakan.</p><img src="images/RWD.png" class="def1">
       </section>
       <section>
         <h2>Responsive breakpoints<br></h2>
