@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="build/build.css">
     <script type="text/javascript" src="build/riandy.js"></script>
     <script type="text/javascript" src="build/denis.js"></script>
+    <script type="text/javascript" src="build/jilbert.js"></script>
   </head>
   <body>
     <article>
@@ -42,10 +43,27 @@
       </section>
       <section>
         <h2>Interactive features
-          <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="changebg()">
+          <input id="enablemouse" type="button" value="Enable Mouse Scroll">
           <input type="button" value="alert" onclick="promptpopup()">
+          <input type="button" value="confirm" onclick="confirmpopup()">
         </h2>
         <p id="test">hi</p>
+        <script>
+          function promptpopup()
+          {
+              var st = prompt("")
+              alert(st)
+          }
+          var c=confirm(Not Allowed To Go On , if you are under 18. Are you ?)
+          function confirmpopup()
+          {
+          if (c==true)
+          alert(you can go on this page)
+          else
+          alert(Not Allowed)
+          }
+          
+        </script>
       </section>
       <section>
         <h2>What is Bootstrap ?</h2>
@@ -160,5 +178,8 @@ $zindex-tooltip:          1070 !default;
       </section>
     </article>
     <script src="build/build.js"></script>
+    <script src="build/riandy.js"></script>
+    <script src="build/denis.js"></script>
+    <script src="build/jilbert.js"></script>
   </body>
 </html>

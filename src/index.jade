@@ -8,6 +8,7 @@ html
     link(rel='stylesheet', type='text/css', href='build/build.css')
     script(type="text/javascript" src="build/riandy.js")
     script(type="text/javascript" src="build/denis.js")
+    script(type="text/javascript" src="build/jilbert.js")
     
   body
 
@@ -44,10 +45,26 @@ html
         
        section
         h2 Interactive features
-            input#enablemouse(type="button",value="Enable Mouse Scroll",onclick="changebg()")
-            input(type="button" value="alert" onclick="promptpopup()")
+            input#enablemouse(type="button",value="Enable Mouse Scroll")
+            input(type="button",value="alert",onclick="promptpopup()")
+            input(type="button" value="confirm" onclick="confirmpopup()")
         p#test hi
-            
+        
+        script.
+            function promptpopup()
+            {
+                var st = prompt("")
+                alert(st)
+            }
+            var c=confirm(Not Allowed To Go On , if you are under 18. Are you ?)
+            function confirmpopup()
+            {
+            if (c==true)
+            alert(you can go on this page)
+            else
+            alert(Not Allowed)
+            }
+
        section
         h2 What is Bootstrap ?
         p Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.
@@ -170,3 +187,6 @@ html
         h2 very much
 
     script(src='build/build.js')
+    script(src='build/riandy.js')
+    script(src='build/denis.js')
+    script(src='build/jilbert.js')
