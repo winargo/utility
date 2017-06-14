@@ -153,13 +153,25 @@ pre[class*="language-"] {
   border: 1px solid #00f;
   border-radius: 2%;
 }
-#submitColor {
+#submitColor1 {
   width: 100px;
   height: 30px;
   border-radius: 2%;
   border: 1px #fff;
 }
-#submitColor:hover {
+#submitColor1:hover {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #00f;
+  border-radius: 2%;
+}
+#submitColor2 {
+  width: 100px;
+  height: 30px;
+  border-radius: 2%;
+  border: 1px #fff;
+}
+#submitColor2:hover {
   width: 100px;
   height: 30px;
   border: 1px solid #00f;
@@ -170,11 +182,13 @@ pre[class*="language-"] {
 }
 #color2 {
   width: 100px;
+  height: 28px;
   border-radius: 2%;
   border: 1px #fff;
 }
 #color2:hover {
   width: 100px;
+  height: 28px;
   border: 1px solid #00f;
   border-radius: 2%;
 }

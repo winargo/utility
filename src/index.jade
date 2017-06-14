@@ -6,49 +6,44 @@ html
     title utility
     
     link(rel='stylesheet', type='text/css', href='build/build.css')
-    script(type="text/javascript" src="build/riandy.js")
-    script(type="text/javascript" src="build/denis.js")
-    script(type="text/javascript" src="build/jilbert.js")
     
   body
 
     article
 
       section
-        h2 Bootstrap Introduction
+        h2#a1 Bootstrap Introduction
         h3 Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a>
-        h3 Team List :
+        h3#a2 Team List :
         p  1.Riandy Irvan Winargo
         p  2.Denis Suryanto
         p  3.Jilbert
         
       section
         h2 Lets get Started !!
-        h3 fullscreen click button below 
+        h3#a3 fullscreen click button below 
         input#fullscreen(type="button",value="click to toggle fullscreen",onclick="toggleFullScreen()")
         
       section
-        h2 Set Your Text Color !!!
-        h3 Font-Color :
-        div 
-            input#color1(type="color",name="color")
-            input#submitColor(type="button",value="Apply",onclick="ubah_warna()")
-            
-        h2#ww test here
-        
-       section
-        h2 Set Your workspaces !!!
+        h2#a4 Set Your workspaces !!!
         h3 Background-Color :
         form
-            input#color2(type="color",name="color")
-            input#submitColor(type="button",value="Apply",onclick="ubah_back()")
+            input#color1(type="color",name="color1")
+            input#submitColor1(type="button",value="Apply")
+        h3 Style Few Fonts :
         
-       section
-        h2 Interactive features
+        form
+            input#color2(type="color",name="color2")
+            input#submitColor2(type="button",value="Apply")
+            
+        h2#a test here
+        
+      section
+        h2#a5 Interactive features
             input#enablemouse(type="button",value="Enable Mouse Scroll")
             input(type="button",value="alert",onclick="promptpopup()")
             input(type="button" value="confirm" onclick="confirmpopup()")
-        p#test hi
+        p#test(class="color") hi
         
         script.
             function promptpopup()
@@ -65,24 +60,24 @@ html
             alert(Not Allowed)
             }
 
-       section
+      section
         h2 What is Bootstrap ?
-        p Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.
+        p#a7 Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.
         
-       section
-        h2.bullet Apa itu Bootstrap?<br><br>
+      section
+        h2#colored.bullet Apa itu Bootstrap?<br><br>
         ul
           li Bootstrap  adalah framework
           li Bootstrap untuk web yang memiliki CSS and Javascript
           li Bootstrap sangat fleksible
           li Bootstap untuk membangun web Secara Dinamis dan Statis
-        h3 <a href="http://getbootstrap.com/getting-started/">Advance Here</a>
+        h3#colored <a href="http://getbootstrap.com/getting-started/">Advance Here</a>
         
 
       section
-        h2 Bootstrap Implementation
-        p Provide a link to Boostrap using html tags.
-        pre#aa
+        h2#colored Bootstrap Implementation
+        p#a8 Provide a link to Boostrap using html tags.
+        prea
            code.language-javascript.
                 "<"Link rel='stylesheet'
                 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -94,24 +89,24 @@ html
                 crossorigin="anonymous"></script>
         
       section
-        h2.bullet Overviews<br>
+        h2#colored.bullet Overviews<br>
         ul 
           li Containers
           li Responsive breakpoints
           li Z-index
         
       section
-        h2 Containers<br>
-        p Containers adalah element layout paling dasar dalam Bootstrap dan diperlukan ketika kita mengunakan default grid system. Pemilihan dari responsive, fixed-width (lebar dari Containers akan menjadi maksimum) dan fuild-width(lebarnya akan selalu 100%). 
+        h2#colored Containers<br>
+        p#a9 Containers adalah element layout paling dasar dalam Bootstrap dan diperlukan ketika kita mengunakan default grid system. Pemilihan dari responsive, fixed-width (lebar dari Containers akan menjadi maksimum) dan fuild-width(lebarnya akan selalu 100%). 
 
       section
-        h2 Responsive breakpoints<br>
-        p Sejak Bootstrap dikembangkan ke mobile, query digunakan untuk membuat layout dan tampilan. Breakpoint ini selalu bedasarkan lebar minumum dan memperbolehkan kita untuk meningkatkan elementnya. 
+        h2#colored Responsive breakpoints<br>
+        p#a10 Sejak Bootstrap dikembangkan ke mobile, query digunakan untuk membuat layout dan tampilan. Breakpoint ini selalu bedasarkan lebar minumum dan memperbolehkan kita untuk meningkatkan elementnya. 
           
       section
-        h2 Responsive breakpoints<br>
-        p Contoh Mengunakan Media Query
-        pre#aa
+        h2#colored Responsive breakpoints<br>
+        p#a11 Contoh Mengunakan Media Query
+        prea
            code.language-query.                
                 // Small devices (landscape phones, 576px and up)
                 @media (min-width: 576px) { ... }
@@ -126,9 +121,9 @@ html
                 @media (min-width: 1200px) { ... }
 
       section
-        h2 Responsive breakpoints<br>
-        p Contoh Mengunakan Media Query
-        pre#aa
+        h2#colored Responsive breakpoints<br>
+        p#a12 Contoh Mengunakan Media Query
+        prea
            code.language-query.                
                 @include media-breakpoint-up(xs) { ... }
                 @include media-breakpoint-up(sm) { ... }
@@ -144,12 +139,12 @@ html
                 }
                 
       section
-        h2 Z-index<br>
-        p Beberapa komponen Bootstrap Mengunakan "Z-index", properti "CSS" membantu dalam mengatur posisi dan konten web. dengan mengunakan skala default "Z-index" di bootstrap yang dirancang untuk Merapikan navigasi, toolips, popovers, modals dan lain lain.
+        h2#colored Z-index<br>
+        p#a13 Beberapa komponen Bootstrap Mengunakan "Z-index", properti "CSS" membantu dalam mengatur posisi dan konten web. dengan mengunakan skala default "Z-index" di bootstrap yang dirancang untuk Merapikan navigasi, toolips, popovers, modals dan lain lain.
         
       section
-        h2 Contoh Z-index<br>
-        pre#aa
+        h2#colored Contoh Z-index<br>
+        prea
            code.language-query.
                 $zindex-dropdown-backdrop: 990 !default;
                 $zindex-navbar:           1000 !default;
@@ -162,8 +157,8 @@ html
                 $zindex-tooltip:          1070 !default;
                 
       section
-        h2 Thank you
-        h2 very much
+        h2#colored Thank you
+        h2#colored very much
 
     script(src='build/build.js')
     script(src='build/riandy.js')
