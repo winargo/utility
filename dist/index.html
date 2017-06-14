@@ -5,62 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>utility</title>
     <link rel="stylesheet" type="text/css" href="build/build.css">
-    <Link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></Link>
     <script type="text/javascript" src="build/riandy.js"></script>
     <script type="text/javascript" src="build/denis.js"></script>
   </head>
   <body>
     <article>
       <section>
-        <h1>Bootstrap Introduction</h1>
-        <h2>Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a></h2>
-        <h2>Team List :</h2>
+        <h2>Bootstrap Introduction</h2>
+        <h3>Powered by <a href="https://www.npmjs.com/package/bespoke">Bespoke</a></h3>
+        <h3>Team List :</h3>
         <p> 1.Riandy Irvan Winargo</p>
         <p> 2.Denis Suryanto</p>
         <p> 3.Jilbert</p>
       </section>
       <section>
-        <h1>Lets get Started !!</h1>
-        <h2>fullscreen click button below </h2>
+        <h2>Lets get Started !!</h2>
+        <h3>fullscreen click button below </h3>
         <input id="fullscreen" type="button" value="click to toggle fullscreen" onclick="toggleFullScreen()">
       </section>
       <section>
-        <h1>Set Your Text Color !!!</h1>
-        <h2>Font-Color :</h2>
+        <h2>Set Your Text Color !!!</h2>
+        <h3>Font-Color :</h3>
         <div>
           <input id="color1" type="color" name="color">
           <input id="submitColor" type="button" value="Apply" onclick="ubah_warna()">
         </div>
-        <h1 id="ww">test here</h1>
+        <h2 id="ww">test here</h2>
       </section>
       <section>
-        <h1>Set Your workspaces !!!</h1>
-        <h2>Background-Color :</h2>
+        <h2>Set Your workspaces !!!</h2>
+        <h3>Background-Color :</h3>
         <form>
           <input id="color2" type="color" name="color">
           <input id="submitColor" type="button" value="Apply" onclick="ubah_back()">
         </form>
       </section>
       <section>
-        <h1>Interactive features</h1>
-        <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="changebg()">
+        <h2>Interactive features
+          <input id="enablemouse" type="button" value="Enable Mouse Scroll" onclick="changebg()">
+        </h2>
+        <p id="test">hi</p>
+        <script>
+          document.getElementById("enablemouse").addEventListener("click", function(){
+          document.getElementById("test").innerHTML = "Hello World";
+          })
+          
+        </script>
       </section>
       <section>
-        <h1>What is Bootstrap ?</h1>
+        <h2>What is Bootstrap ?</h2>
         <p>Bootstrap adalah framework yang digunakan untuk menstyling web anda dengan CSS yang sudah diminified dan JS script yang sudah di minified juga untuk memaksimalisasikan tampilan CSS dan Javascript pada web anda.</p>
       </section>
       <section>
-        <h1 class="bullet">Apa itu Bootstrap?<br><br></h1>
+        <h2 class="bullet">Apa itu Bootstrap?<br><br></h2>
         <ul>
           <li>Bootstrap  adalah framework</li>
           <li>Bootstrap untuk web yang memiliki CSS and Javascript</li>
           <li>Bootstrap sangat fleksible</li>
           <li>Bootstap untuk membangun web Secara Dinamis dan Statis</li>
         </ul>
-        <h2><a href="http://getbootstrap.com/getting-started/">Advance Here</a></h2>
+        <h3><a href="http://getbootstrap.com/getting-started/">Advance Here</a></h3>
       </section>
       <section>
-        <h1>Bootstrap Implementation</h1>
+        <h2>Bootstrap Implementation</h2>
         <p>Provide a link to Boostrap using html tags.</p>
         <pre id="aa"><code class="language-javascript">"<"Link rel='stylesheet'
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -73,27 +80,23 @@ crossorigin="anonymous"></script>
 </code></pre>
       </section>
       <section>
-        <h1 class="bullet">Overviews<br></h1>
+        <h2 class="bullet">Overviews<br></h2>
         <ul>
           <li>Containers</li>
-          <li>Glyphicons</li>
           <li>Responsive breakpoints</li>
           <li>Z-index</li>
         </ul>
       </section>
       <section>
-        <h1>Containers<br></h1>
+        <h2>Containers<br></h2>
         <p>Containers adalah element layout paling dasar dalam Bootstrap dan diperlukan ketika kita mengunakan default grid system. Pemilihan dari responsive, fixed-width (lebar dari Containers akan menjadi maksimum) dan fuild-width(lebarnya akan selalu 100%). </p>
       </section>
       <section>
-        <p>Examples of Glyphicons<span class="glyphicons glyphicons-glass"></span></p>
-      </section>
-      <section>
-        <h1>Responsive breakpoints<br></h1>
+        <h2>Responsive breakpoints<br></h2>
         <p>Sejak Bootstrap dikembangkan ke mobile, query digunakan untuk membuat layout dan tampilan. Breakpoint ini selalu bedasarkan lebar minumum dan memperbolehkan kita untuk meningkatkan elementnya. </p>
       </section>
       <section>
-        <h1>Responsive breakpoints<br></h1>
+        <h2>Responsive breakpoints<br></h2>
         <p>Contoh Mengunakan Media Query</p>
         <pre id="aa"><code class="language-query">// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
@@ -109,7 +112,7 @@ crossorigin="anonymous"></script>
 </code></pre>
       </section>
       <section>
-        <h1>Responsive breakpoints<br></h1>
+        <h2>Responsive breakpoints<br></h2>
         <p>Contoh Mengunakan Media Query</p>
         <pre id="aa"><code class="language-query">@include media-breakpoint-up(xs) { ... }
 @include media-breakpoint-up(sm) { ... }
@@ -126,11 +129,11 @@ crossorigin="anonymous"></script>
 </code></pre>
       </section>
       <section>
-        <h1>Z-index<br></h1>
+        <h2>Z-index<br></h2>
         <p>Beberapa komponen Bootstrap Mengunakan "Z-index", properti "CSS" membantu dalam mengatur posisi dan konten web. dengan mengunakan skala default "Z-index" di bootstrap yang dirancang untuk Merapikan navigasi, toolips, popovers, modals dan lain lain.</p>
       </section>
       <section>
-        <h1>Contoh Z-index<br></h1>
+        <h2>Contoh Z-index<br></h2>
         <pre id="aa"><code class="language-query">$zindex-dropdown-backdrop: 990 !default;
 $zindex-navbar:           1000 !default;
 $zindex-dropdown:         1000 !default;
@@ -140,12 +143,11 @@ $zindex-modal-backdrop:   1040 !default;
 $zindex-modal:            1050 !default;
 $zindex-popover:          1060 !default;
 $zindex-tooltip:          1070 !default;
-
 </code></pre>
       </section>
       <section>
-        <h1>Thank you</h1>
-        <h1>very much</h1>
+        <h2>Thank you</h2>
+        <h2>very much</h2>
       </section>
     </article>
     <script src="build/build.js"></script>
