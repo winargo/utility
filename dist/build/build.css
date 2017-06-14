@@ -192,15 +192,3 @@ pre[class*="language-"] {
   border: 1px solid #00f;
   border-radius: 2%;
 }
-.def{
-    width: 600px;
-    height: 100px;
-}
-.def1{
-    width: 600px;
-    height: 300px;
-}
-.def2{
-    height: 100px;
-    width: 320px;
-}
