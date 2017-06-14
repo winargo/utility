@@ -15,11 +15,6 @@ function enablemouse(event) {
     alert("You pressed button: " + event.button);
 }
 
-function scroll(){
-    alert("mouse enabled");
-    document.body.doScroll(event.wheelDelta>0?"left":"right");
-}
 
-
-document.getElementById("enablemouse").addEventListener("click", function(){
-            document.getElementById("test").innerHTML = "Hello World";})
+document.getElementById("enablemouse").addEventListener("click", function (){
+document.getElementById("test").innerHTML = "Hello World";});

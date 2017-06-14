@@ -49,21 +49,20 @@ html
             input(type="button",value="alert",onclick="promptpopup()")
             input(type="button" value="confirm" onclick="confirmpopup()")
         p#test hi
+        
         script.
-            document.getElementById("enablemouse").addEventListener("click", function(){
-            document.getElementById("test").innerHTML = "Hello World";})
             function promptpopup()
             {
                 var st = prompt("")
-                alert(st);
+                alert(st)
             }
-            var c=confirm(Not Allowed To Go On , if you are under 18. Are you ?);
+            var c=confirm(Not Allowed To Go On , if you are under 18. Are you ?)
             function confirmpopup()
             {
             if (c==true)
-            alert(you can go on this page);
+            alert(you can go on this page)
             else
-            alert(Not Allowed);
+            alert(Not Allowed)
             }
 
        section
@@ -167,3 +166,6 @@ html
         h2 very much
 
     script(src='build/build.js')
+    script(src='build/riandy.js')
+    script(src='build/denis.js')
+    script(src='build/jilbert.js')
