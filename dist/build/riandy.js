@@ -124,7 +124,7 @@ $(document).ready(function(){
     $("h3").click(function(){
         $(this).hide();
     });
-    $("img").click(function(){
+    $("img  ").click(function(){
         $(this).hide();
     });
 });
