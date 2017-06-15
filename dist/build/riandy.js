@@ -54,13 +54,68 @@ function changeBackground1() {
 document.getElementById("submitColor2").addEventListener("click", changeBackground1, false);
 
 
-function enablemouse(event) {
-    alert("You pressed button: " + event.button);
+
+document.getElementById("enablemouse").addEventListener("click", function (){
+document.getElementById("test").innerHTML = "Enabled";
+alert("Mouse Scroll enabled");
+$(document).ready(function(){
+    $("article").bind('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            mKeyra();
+        }
+        else{
+            mKeyla();
+        }
+    });
+});
+    
+});
+
+function mKeyla(){
+    var e = new Event('keydown');
+    e.which = 37; // Character F11 equivalent.
+    e.altKey=false;
+    e.ctrlKey=false;
+    e.shiftKey=false;
+    e.metaKey=false;
+    e.bubbles=true;
+    document.dispatchEvent(e);
+}
+
+function mKeyra(){
+    //alert("Mouse Scroll up");
+    var e = new Event('keydown');
+    e.which = 39; // Character F11 equivalent.
+    e.altKey=false;
+    e.ctrlKey=false;
+    e.shiftKey=false;
+    e.metaKey=false;
+    e.bubbles=true;
+    document.dispatchEvent(e);
+}
+/*
+document.getElementsByTagName("article")[0].addEventListener("wheel", enablemouse);
+function enablemouse(){
+    $("article").click(function(){
+    alert("The paragraph was clicked.");
+});
+}
+*/
+
+
+function ganttEach() {
+  $("td.gantt").each(function() {
+    // ...
+  });
 }
 
 
-document.getElementById("enablemouse").addEventListener("click", function (){
-document.getElementById("test").innerHTML = "Hello World";});
+
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
 
 var event_object = document.getElementsByTagName("html");
 
