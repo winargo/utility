@@ -115,6 +115,18 @@ $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
     });
+    $("h1").click(function(){
+        $(this).hide();
+    });
+    $("h2").click(function(){
+        $(this).hide();
+    });
+    $("h3").click(function(){
+        $(this).hide();
+    });
+    $("img").click(function(){
+        $(this).hide();
+    });
 });
 
 var event_object = document.getElementsByTagName("html");
